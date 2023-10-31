@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
@@ -434,7 +436,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +486,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -534,56 +536,84 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-12 {
+.mt-12{
   margin-top: 3rem;
 }
 
-.mt-8 {
+.mt-8{
   margin-top: 2rem;
 }
 
-.border-b {
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-initial{
+  flex: 0 1 auto;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.border-b{
   border-bottom-width: 1px;
 }
 
-.bg-stone-900 {
+.bg-stone-900{
   --tw-bg-opacity: 1;
   background-color: rgb(28 25 23 / var(--tw-bg-opacity));
 }
 
-.p-4 {
+.p-4{
   padding: 1rem;
 }
 
-.px-16 {
+.px-16{
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
-.py-6 {
+.py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.pb-2 {
+.pb-2{
   padding-bottom: 0.5rem;
 }
 
-.font-bold {
+.font-mine{
+  font-family: Permanent Marker;
+}
+
+.font-bold{
   font-weight: 700;
 }
 
-.uppercase {
+.uppercase{
   text-transform: uppercase;
 }
 
-.text-gray-600 {
+.text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  @media (prefers-color-scheme: dark) {
+@media (min-width: 1024px){
+  @media (prefers-color-scheme: dark){
     .lg\:dark\:content-auto {
       content-visibility: auto;
     }
