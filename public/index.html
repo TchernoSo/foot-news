@@ -7,10 +7,10 @@
     <link href="/public/styles.css" rel="stylesheet">
   </head>
 
-  <body class="text-gray-600 bg-stone-900 font-mine lg:dark:content-auto">
+  <body class="text-rose-600 bg-stone-900 font-mine lg:dark:content-auto">
     <!-- content wrapper -->
-    <div>
-      <div>
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1">
         <nav>
           <div>
             <h1 class="uppercase p-4 border-b">
@@ -38,10 +38,10 @@
       </div>
       <!-- End NAV -->
 
-      <main class="px-16 py-6">
-        <div class="flex justify-end">
-          <a href="#">Log in</a>
-          <a href="#" class="ml-4">Sign up</a>
+      <main class="px-16 py-6 md:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a href="#" class="btn">Log in</a>
+          <a href="#" class="ml-4 btn">Sign up</a>
         </div>
         <header>
           <h2>Title of New</h2>
@@ -49,13 +49,36 @@
         </header>
         <div>
           <h4 class="font-bold mt-12 pb-2 border-b">Latest News</h4>
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- cards here -->
-            <div>
-              <img src="/public/images/eurosport.jpg" alt="Eurosport Image" />
-              <div>
+            <div class="card">
+              <img src="/public/images/eurosport.jpg" alt="Eurosport Image" class="w-full h-32 sm:h-48 object-cover" />
+              <div class="m-4">
                 <span> Info</span>
-                <span>By autor</span>
+                <span class="block">By autor</span>
+              </div>
+              <div class="badge">
+                <span>time</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover" />
+              <div class="m-4">
+                <span> Info</span>
+                <span class="block">By autor</span>
+              </div>
+              <div class="badge">
+                <span>time</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover" />
+              <div class="m-4">
+                <span> Info</span>
+                <span class="block">By autor</span>
+              </div>
+              <div class="badge">
+                <span>time</span>
               </div>
             </div>
           </div>
@@ -64,7 +87,7 @@
             <!-- Another cards -->
           </div>
          <div class="flex justify-center">
-            <div>Load More</div>
+            <div class="btn">Load More</div>
          </div>
         </div>
       </main>
