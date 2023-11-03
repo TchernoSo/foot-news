@@ -10,7 +10,7 @@
   <body class="text-rose-600 bg-stone-900 font-mine lg:dark:content-auto">
     <!-- content wrapper -->
     <div class="grid md:grid-cols-3">
-      <div class="md:col-span-1">
+      <div class="md:col-span-1 md:flex md:justify-end">
         <nav>
           <div>
             <h1 class="uppercase p-4 border-b">
@@ -18,17 +18,20 @@
             </h1>
           </div>
           <ul>
-            <li>
-              <a href="#">
+            <li class="py-2">
+              <a href="#" class="flex justify-start">
+                <svg  class="w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
                 <span>Home</span>
               </a>
             </li>
-            <li>
+            <li class="py-2">
               <a href="#">
                 <span>About</span>
               </a>
             </li>
-            <li>
+            <li class="py-2">
               <a href="#">
                 <span>Contact</span>
               </a>
@@ -38,10 +41,10 @@
       </div>
       <!-- End NAV -->
 
-      <main class="px-16 py-6 md:col-span-2">
+      <main class="px-16 py-6 md:col-span-2 border-l-0 border-l-rose-500">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="btn">Log in</a>
-          <a href="#" class="ml-4 btn">Sign up</a>
+          <a href="#" class="btn hover:bg-red-500 hover:text-white">Log in</a>
+          <a href="#" class="ml-4 btn hover:bg-red-500 hover:text-white">Sign up</a>
         </div>
         <header>
           <h2>Title of New</h2>
@@ -52,7 +55,7 @@
           <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- cards here -->
             <div class="card">
-              <img src="/public/images/eurosport.jpg" alt="Eurosport Image" class="w-full h-32 sm:h-48 object-cover" />
+              <img src="/public/images/eurosport.jpg" alt="Eurosport Image" class="w-full h-32 sm:h-48 object-cover hover:shadow-lg cursor-pointer" />
               <div class="m-4">
                 <span> Info</span>
                 <span class="block">By autor</span>
@@ -62,7 +65,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover" />
+              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover hover:shadow-lg cursor-pointer" />
               <div class="m-4">
                 <span> Info</span>
                 <span class="block">By autor</span>
@@ -72,7 +75,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover" />
+              <img src="/public/images/plus icon.jpg" alt="Plus" class="w-full h-32 sm:h-48 object-cover hover:shadow-lg cursor-pointer" />
               <div class="m-4">
                 <span> Info</span>
                 <span class="block">By autor</span>
@@ -87,7 +90,7 @@
             <!-- Another cards -->
           </div>
          <div class="flex justify-center">
-            <div class="btn">Load More</div>
+            <div class="btn hover:bg-red-500 hover:text-white hover: shadow-inner">Load More</div>
          </div>
         </div>
       </main>
