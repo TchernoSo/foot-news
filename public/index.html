@@ -12,13 +12,20 @@
     <div class="grid md:grid-cols-3">
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav>
-          <div>
+          <div class="flex justify-between items-center">
             <h1 class="uppercase p-4 border-b">
-              <a href="/">Foot News</a>
+              <a href="/" class="hover:">Foot News</a>
             </h1>
+            <div class="px-4 py-4 cursor-pointer md:hidden" id="bars">
+              <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+              </svg>
+           
+
+            </div>
           </div>
-          <ul>
-            <li class="py-2">
+          <ul class="mt-6 hidden md:block" id="menu">
+            <li class="py-2 transform hover:scale-110">
               <a href="#" class="flex justify-start">
                 <svg  class="w-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -26,12 +33,12 @@
                 <span>Home</span>
               </a>
             </li>
-            <li class="py-2">
+            <li class="py-2 transform hover:scale-110">
               <a href="#">
                 <span>About</span>
               </a>
             </li>
-            <li class="py-2">
+            <li class="py-2 transform hover:scale-110">
               <a href="#">
                 <span>Contact</span>
               </a>
@@ -43,7 +50,7 @@
 
       <main class="px-16 py-6 md:col-span-2 border-l-0 border-l-rose-500">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="btn hover:bg-red-500 hover:text-white">Log in</a>
+          <a href="#" class="btn hover:bg-red-500 hover:text-white ">Log in</a>
           <a href="#" class="ml-4 btn hover:bg-red-500 hover:text-white">Sign up</a>
         </div>
         <header>
@@ -90,10 +97,11 @@
             <!-- Another cards -->
           </div>
          <div class="flex justify-center">
-            <div class="btn hover:bg-red-500 hover:text-white hover: shadow-inner">Load More</div>
+            <div class="btn hover:bg-red-500 hover:text-white hover: shadow-inner ">Load More</div>
          </div>
         </div>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
