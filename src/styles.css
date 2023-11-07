@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .content-auto {
-      content-visibility: auto;
-    }
-  }
 
   .card{
     @apply bg-white rounded overflow-hidden shadow-md relative
@@ -24,3 +19,4 @@
 #formattedDate{
   @apply text-rose-300 text-sm mt-6
 }
+
